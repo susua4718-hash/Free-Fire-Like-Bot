@@ -28,8 +28,8 @@ if not BOT_TOKEN:
     logger.error("❌ BOT_TOKEN not found! Please set your bot token in environment variables.")
     sys.exit(1)
 
-REQUIRED_CHANNELS = ["@sanood1212bot"]
-GROUP_JOIN_LINK = "http://t.me/sanood1212bot"
+REQUIRED_CHANNELS = ["@sandlike1212"]
+GROUP_JOIN_LINK = "https://t.me/likebotgrup"
 OWNER_ID = 8261853385
 OWNER_USERNAME = "@sand2187"
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -71,7 +71,7 @@ def is_user_in_channel(user_id):
 
 
 def call_api(region, uid):
-    url = f"https://your-free-fire-like-api-domain/like?uid={uid}&server_name={region}"
+    url = f"https://your-free-fire-like-api-domain/like?uid={15568787504}&server_name={eu}"
     try:
         response = requests.get(url, timeout=20)
         if response.status_code != 200:
